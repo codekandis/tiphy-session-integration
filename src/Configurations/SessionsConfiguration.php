@@ -24,6 +24,6 @@ class SessionsConfiguration extends AbstractConfiguration implements SessionsCon
 	 */
 	public function getSavePath(): ?string
 	{
-		return $this->readOrDefault( 'savePath', null );
+		return $this->readOrDefault( null, 'savePath' );
 	}
 }
